@@ -1,4 +1,5 @@
 from time import sleep
+from operator import itemgetter
 
 agenda = []
 contato = {}
@@ -146,7 +147,8 @@ while menu != "6" :
 
     elif menu == "5":
         print("-" * 30)
-        for contato in agenda:
+        newlist = sorted(agenda, key=itemgetter('Nome'))
+        for contato in newlist:
             print("-" * 30)
             for k, v in contato.items():
                 print(f'{k}: {v}')
