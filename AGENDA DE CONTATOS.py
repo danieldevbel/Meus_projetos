@@ -52,10 +52,10 @@ def editar_contato(agenda, busca):
                 sleep(1)
                 print("-" * 30)    
                 print("Escolha uma opção:")
-                print("1- Editar nome")
-                print("2- Editar telefone")
-                print("3- Editar email")
-                print("4- Sair")
+                print("[ 1 ] - Editar nome")
+                print("[ 2 ] - Editar telefone")
+                print("[ 3 ] - Editar email")
+                print("[ 4 ] - Sair")
                 opcao = input("Digite o número da opção desejada: ")
 
                 if opcao == "1":
@@ -98,7 +98,7 @@ def editar_contato(agenda, busca):
 
 while menu != "6" :
     print("-" * 70)
-    print("Olá, bem vindo a sua agenda! Por favor insira uma das opções abaixo: \n 1-Adicionar novo contato \n 2-Buscar um contato \n 3-Editar um contato \n 4-Excluir um contato \n 5-Listar todos os contatos \n 6-Sair ")
+    print("Olá, bem vindo a sua agenda! Por favor insira uma das opções abaixo: \n [ 1 ] - Adicionar novo contato \n [ 2 ] - Buscar um contato \n [ 3 ] - Editar um contato \n [ 4 ] - Excluir um contato \n [ 5 ] - Listar todos os contatos \n [ 6 ] - Sair ")
     print("-" * 70)
     menu = input('  ')
 
@@ -134,7 +134,7 @@ while menu != "6" :
     elif menu == "4":
         busca = input('Insira o nome, telefone ou email do contato a excluir da agenda: ')
         contato_encotrado = buscarContato(agenda, busca)    
-        opcao_3 = input('Tem certeza que deseja excluir esse contato? \n 1-SIM \n 2-NÃO \n   ')
+        opcao_3 = input('Tem certeza que deseja excluir esse contato? \n [ 1 ]-SIM \n [ 2 ]-NÃO \n   ')
 
         if opcao_3 == "1":
             agenda.remove(contato_encotrado)
