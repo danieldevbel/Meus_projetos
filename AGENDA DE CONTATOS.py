@@ -43,6 +43,7 @@ def editar_contato(agenda, busca):
     encontrado = False
     for contato in agenda:
         if contato['Nome'] == busca or contato["Telefone"] == busca or contato["Email"] == busca:
+            encontrado = True
             while True:
                 print("-" * 30)
                 print('Contato encontrado!')
@@ -85,13 +86,12 @@ def editar_contato(agenda, busca):
                     print('Opção inválida.')
                     print("-" * 30)
 
-                encontrado = True
                 
-    if not encontrado:
-        print("-" * 36)
-        print('  Contato não encontrado na agenda.')
-        print("-" * 36)
-        sleep(1)
+        if not encontrado:
+            print("-" * 36)
+            print('  Contato não encontrado na agenda.')
+            print("-" * 36)
+            sleep(1)
 
 
 #menu de opções 
