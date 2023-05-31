@@ -1,0 +1,200 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Domine&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%; /*1rem em 10px*/
+    --fonte01: Raleway, Arial, Helvetica, sans-serif;
+    --fonte-malbec: 'Domine', serif;
+    --fonte-hugoboss: 'Playfair Display', serif;
+    --fonte-goodgirl: 'Cormorant', serif;
+}
+
+header{
+    text-align: center;
+}
+
+body{
+    font-size: 1.5rem;
+    background-color: var(--cor-01);
+    background-color: white;
+}
+
+
+/* NAVEGAÇÃO */
+
+#pag_atual{
+    text-decoration: none;
+    color: black;
+    text-underline-position: under;
+    border-bottom: 2px solid black;
+}
+
+.propaganda {
+    position: sticky;
+    top: 1rem;
+    background-color: black;
+    height: 20px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+
+    background-color: white;
+    padding: 0 3rem;
+    height: 10rem;
+    width: 100%;
+    font-family: var(--fonte01);
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    margin-top: 1.2rem;
+}
+
+a.nav_link{
+    display: flex;
+    text-decoration: none;
+    color: black;
+    margin-left: 10vw;
+    font-size: 2rem;
+    padding: 0px 5px;
+    margin-top: 3px;
+}
+
+a.nav_link:hover{
+    text-decoration: none;
+    color: black;
+    border-bottom: 2px solid black;
+    /* margin-top: 2px; */
+}
+
+#imagem_web{
+    height: 4rem;
+}
+
+/*---FORM---*/
+
+form{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+label {  
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #202020;
+    margin: 5px;
+    margin-left: 5rem;
+    width: 300px;
+    height: 16px;
+    
+}
+#login{
+    width: 15rem;
+    height: 3.5rem;
+    font-size: 20px;
+    border: 1px solid transparent;
+    border-radius: 1.75rem;
+    font-family: var(--fonte01);
+    letter-spacing: 2.1px;
+    background-color: #202020;
+}
+
+#limpar{
+border: none;
+background: none;
+}
+
+.form-control {
+    width: 300px;
+    height: 40px;
+    margin: 5px;
+    margin-left: 5rem;
+    font-size: 1.5rem;
+}
+
+#sexo{
+    font-size: 16px;
+    width: 300px;
+    height: 40px;
+}
+
+#data{
+    font-size: 15px;
+}
+
+::placeholder {   /* Firefox 19+ */
+    font-size: 15px;
+  }
+
+.container{
+    margin: auto;
+    width: 100%;
+    text-align: center;
+}
+
+.titulo-registrar{
+    padding-bottom: 2rem;
+    font-size: 3rem;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 7rem;
+}
+
+
+
+/* FOOTER */
+
+
+footer{
+    background-color: black;
+    height: 40rem;
+}
+
+#logo_footer{
+height: 6rem;
+margin-top: 5rem;
+margin-bottom: 10rem;
+}
+
+table{
+width: 100%;
+color: white;
+margin-bottom: 5rem;
+font-family: var(--fonte01);
+}
+td{
+padding: 3px;
+text-align: center;
+font-family: var(--fonte01);
+background-color: black;
+}
+
+th{
+padding-bottom: 1.5rem;
+font-family: var(--fonte01);
+background-color: black;
+}
+
+.section_footer{
+text-align: center;
+height: 50px;
+}

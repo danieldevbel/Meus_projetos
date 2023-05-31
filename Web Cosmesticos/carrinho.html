@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="produtos.css">
+    <link rel="shortcut icon" href="imagens-e-video/sephora-logo-pqn.jpg" type="image/x-icon">
+    <title> Web Cosmésticos | Carrinho </title>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    
+    <style>
+   
+  .coluna {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+    </style>
+</head>
+<body>
+    <header>
+      <nav class="propaganda">
+        <ul id="ul_prop">
+          <li><a class = "txt_prop"href="produtos.html">OFERTAS ESPECIAIS DE DIA DAS MÃES!</a></li>
+          <li><img class="img_prop" src="imagens-e-video/imagem_propaganda"></li>
+          <li><a class="txt_prop" href="produtos.html">SOMENTE HOJE TUDO COM 20% DE DESCONTO!</a></li>
+          <li><img class="img_prop" src="imagens-e-video/imagem_propaganda"></li>
+          <li><a class="txt_prop" href="produtos.html">FRETE GRÁTIS PARA TODO O BRASIL</a></li>
+        </ul>
+      </nav>
+        <nav>
+          <img src="imagens-e-video/web-logo-branco4.jpeg" alt="Web Cosmésticos Logo" id="imagem_web" style="margin-left: 650px;" >
+              <ul>
+                  <li><a class="nav_link" href="home.html">HOME</a></li>
+                  <li><a class="nav_link"href="produtos.html" >PRODUTOS</a></li>
+                  <li><a class="nav_link" href="cadastro.html">CADASTRO</a></li>
+                  <li><a class="nav_link" href="sobre.html">SOBRE</a></li>                  
+                  <li><a class="nav_link" id="pag_atual"  href="carrinho.html"><i class="fa fa-cart-plus" aria-hidden="true"></i></a></li>     
+                </ul>
+              <a href="contato.html"></a>
+          </nav>
+    </header>
+    <main>
+   
+     
+    <section class="secao_produtos_carrinho" > 
+
+    </section> 
+
+    <div class="row d-flex justify-content-center">
+          
+    <h1> O Total da compra deu R$ </h1> <h1 id="htotal"></h1>
+    </div>
+        
+    <form class="coluna" >
+        
+      
+      <label for="cep">CEP de destino:</label>
+      <input type="text" id="cep" name="cep"><br><br>
+    
+      <input type="submit" value="Calcular frete">
+    </form>  
+    
+    </main>
+    <footer>
+        <section class="section_footer">
+          <img src="imagens-e-video/web-logo-preto3.png" alt="Sephora Logo" id="logo_footer">
+          <section class="section_footer">
+            <table>
+              <tr>
+                <th style="font-family: Raleway, Arial, Helvetica, sans-serif;">SERVIÇOS ONLINE</th>
+                <th style="font-family: Raleway, Arial, Helvetica, sans-serif;">SERVIÇOS DA BOUTIQUE</th>
+                <th style="font-family: Raleway, Arial, Helvetica, sans-serif;">A Web Cosmésticos</th>
+              </tr>
+              <tr>
+                <td style="font-family: Raleway, Arial, Helvetica, sans-serif;">Perguntas Frequentes</td>
+                <td style="font-family: Raleway, Arial, Helvetica, sans-serif;">Escolha uma Boutique</td>
+                <td style="font-family: Raleway, Arial, Helvetica, sans-serif;">Trabalhe Conosco</td>
+              </tr>
+              <tr>
+                <td style="font-family: Raleway, Arial, Helvetica, sans-serif;">Minha Conta</td>
+                <td style="font-family: Raleway, Arial, Helvetica, sans-serif;">Agendamento com a Web Cosmésticos</td>
+                <td style="font-family: Raleway, Arial, Helvetica, sans-serif;">Privacidade</td>
+              </tr>
+              <tr>
+                <td style="font-family: Raleway, Arial, Helvetica, sans-serif;">Instrução de Cuidados</td>
+                <td style="font-family: Raleway, Arial, Helvetica, sans-serif;">Lojas Web Cosmésticos</td>
+                <td style="font-family: Raleway, Arial, Helvetica, sans-serif;">Combate à Falsificação</td>
+              </tr>
+</body>
+
+
+<script src="carrinhoo.js" ></script>
+</html>

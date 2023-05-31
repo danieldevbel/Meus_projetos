@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="produtos.css">
+    <link rel="shortcut icon" href="imagens-e-video/logopretopeq.jpeg" type="image/x-icon">
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+    <title> Web Cosmésticos | Produtos </title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+</head>
+<body>
+    <header>
+      <nav class="propaganda">
+        <ul id="ul_prop">
+          <li><a class = "txt_prop"href="produtos.html">OFERTAS ESPECIAIS DE DIA DAS MÃES!</a></li>
+          <li><img class="img_prop" src="imagens-e-video/imagem_propaganda"></li>
+          <li><a class="txt_prop" href="produtos.html">SOMENTE HOJE TUDO COM 20% DE DESCONTO!</a></li>
+          <li><img class="img_prop" src="imagens-e-video/imagem_propaganda"></li>
+          <li><a class="txt_prop" href="produtos.html">FRETE GRÁTIS PARA TODO O BRASIL</a></li>
+        </ul>
+      </nav>
+        <nav>
+            <img src="imagens-e-video/web-logo-branco4.jpeg" alt="Web Cosmésticos Logo" id="imagem_web" style="margin-left: 650px;" >
+              <ul>
+                  <li><a class="nav_link" href="home.html">HOME</a></li>
+                  <li><a class="nav_link" id="pag_atual" href="produtos.html" >PRODUTOS</a></li>
+                  <li><a class="nav_link" href="cadastro.html">CADASTRO</a></li>
+                  <li><a class="nav_link" href="sobre.html">SOBRE</a></li>
+                 <li><a class="nav_link" onclick="ircarrinho()"><i class="fa fa-cart-plus" aria-hidden="true"></i></a> </li>
+                 <!-- href="carrinho.html" -->
+                </ul>
+              <a href="contato.html"></a>
+          </nav>
+    </header>
+    <main>
+        
+        <h1 class="titulo_produtos">Nossos Produtos</h1>
+
+        <section class="slider">
+          <input name='slide' type="radio">
+          <input name='slide' type="radio">
+          <input name='slide' type="radio">
+          <input name='slide' type="radio">
+          <input name='slide' type="radio">
+          <input name='slide' type="radio">
+          <input name='slide' type="radio">
+      
+          <div class="slider-content">
+              <div class="slider-item"><img src="imagens-e-video/slide1.avif"></div>
+              <div class="slider-item"><img src="imagens-e-video/slide2.avif"></div>
+              <div class="slider-item"><img src="imagens-e-video/slide3.avif"></div>
+              <div class="slider-item"><img src="imagens-e-video/banner4.avif"></div>
+              <div class="slider-item"><img src="imagens-e-video/banner5.avif"></div>
+              <div class="slider-item"><img src="imagens-e-video/slide1.avif"></div>
+              <div class="slider-item"><img src="imagens-e-video/slide7.avif"></div>
+          </div>
+        </section>
+        <section class="secao_produtos_teste">
+        </section>
+
+
+        <section id="secao_produtos">
+
+            <section class="produtos">
+                <a href="#" class="link_produtos">
+                  <img class="img_produtos" src="imagens-e-video/coco-mademoseille.png" alt="coco-mademoseille perfume">
+                  <p class="preco_produto">R$ 1.499,90</p>
+                  <p class="descricao_produtos">Coco Mademoseille <br> Eau de Parfum Chanel - 200ml</p>
+                  <p class="imagem_caminho d-none">imagens-e-video/coco-mademoseille.png</p>                  
+                </a>
+                <button type="button" class="btn btn-success adicionarcarrinho" >Adicionar ao Carrinho</button>
+            </section>
+
+            <section class="produtos">
+                <a href="#" class="link_produtos">
+                  <img class="img_produtos" src="imagens-e-video/malbec.png" alt="perfume malbec">
+                  <p class="preco_produto">R$ 159,90</p>
+                  <p class="descricao_produtos">Malbec Club Intenso <br> Colônia Oboticário - 100ml</p>
+                  <p class="imagem_caminho d-none">imagens-e-video/malbec.png</p>
+                </a>
+                <button type="button" class="btn btn-success adicionarcarrinho" >Adicionar ao Carrinho</button>
+            </section>
+
+            <section class="produtos">
+                <a href="#" class="link_produtos">
+                  <img class="img_produtos" src="imagens-e-video/hugoboss-kitbanho.png" alt="Kit Banho Hugo Boss">
+                  <p class="preco_produto">R$ 449,90</p>
+                  <p class="descricao_produtos">Kit Banho Hugo Boss <br> Perfume, Sabonete corporal e Desodorante</p>
+                </a>
+                <button type="button" class="btn btn-success adicionarcarrinho" >Adicionar ao Carrinho</button>
+            </section>
+
+            <section class="produtos">
+                <a href="#" class="link_produtos">
+                  <img class="img_produtos" src="imagens-e-video/goodgirl.png" alt="Good Girl">
+                  <p class="preco_produto">R$ 399,90</p>
+                  <p class="descricao_produtos">Good Girl <br> Eau de Parfum - Carolina Herrera (150ml) </p>
+                  <p class="imagem_caminho d-none">imagens-e-video/goodgirl.png</p>  
+                </a>
+                <button type="button" class="btn btn-success adicionarcarrinho" >Adicionar ao Carrinho</button>
+            </section>
+
+            <section class="produtos">
+                <a href="#" class="link_produtos">
+                  <img class="img_produtos" src="imagens-e-video/bleudechanel.png" alt="Bleu de Chanel">
+                  <p class="preco_produto">R$ 849,90</p>
+                  <p class="descricao_produtos">Bleu de Chanel <br> Eau de Parfum - Chanel (150ml) </p>
+                  <p class="imagem_caminho d-none">imagens-e-video/bleudechanel.png</p> 
+                </a>
+                <button type="button" class="btn btn-success adicionarcarrinho" >Adicionar ao Carrinho</button>
+            </section>
+
+            <section class="produtos">
+                <a href="#" class="link_produtos">
+                  <img class="img_produtos" src="imagens-e-video/nativaspa.png" alt="Kit NativaSPA">
+                  <p class="preco_produto">R$ 389,90</p>
+                  <p class="descricao_produtos">Kit NativaSPA <br> Orquídea Noire - oBoticario </p>
+                  <p class="imagem_caminho d-none">imagens-e-video/nativaspa.png</p> 
+                </a>
+                <button type="button" class="btn btn-success adicionarcarrinho" >Adicionar ao Carrinho</button>
+            </section>
+            <section class="produtos">
+                <a href="#" class="link_produtos">
+                  <img class="img_produtos" src="imagens-e-video/eudora-produto.png" alt="Kit Eudora">
+                  <p class="preco_produto">R$ 499,90</p>
+                  <p class="descricao_produtos">Kit Eudora Siàge <br> Liso Intenso (4 Produtos) </p>
+                  <p class="imagem_caminho d-none">imagens-e-video/eudora-produto.png</p> 
+                </a>
+                <button type="button" class="btn btn-success adicionarcarrinho" >Adicionar ao Carrinho</button>
+            </section>
+
+            <section class="produtos">
+                <a href="#" class="link_produtos">
+                  <img class="img_produtos" src="imagens-e-video/loreal.png" alt="Kit Loreal">
+                  <p class="preco_produto">R$ 706,90</p>
+                  <p class="descricao_produtos"> Kit L'Oréal Professionnel <br> Absolut Repair Gold </p>
+                  <p class="imagem_caminho d-none">imagens-e-video/loreal.png</p> 
+                </a>
+                <button type="button" class="btn btn-success adicionarcarrinho" >Adicionar ao Carrinho</button>
+            </section>
+
+            <section class="produtos">
+                <a href="#" class="link_produtos">
+                  <img class="img_produtos" src="imagens-e-video/redken.png" alt="Kit Redken">
+                  <p class="preco_produto">R$ 508,90</p>
+                  <p class="descricao_produtos"> Redken All Soft <br> Mega Salon Duo                  </p>
+                  <p class="imagem_caminho d-none">imagens-e-video/redken.png</p> 
+                </a>
+                <button type="button" class="btn btn-success adicionarcarrinho" >Adicionar ao Carrinho</button>
+            </section>
+
+            <section class="produtos">
+                <a href="#" class="link_produtos">
+                  <img class="img_produtos" src="imagens-e-video/inoar.png" alt="Kit Inoar">
+                  <p class="preco_produto">R$ 225,90</p>
+                  <p class="descricao_produtos"> Kit Inoar Argan Oil <br> System Salon Full </p>
+                  <p class="imagem_caminho d-none">imagens-e-video/inoar.png</p> 
+                </a>
+                <button type="button" class="btn btn-success adicionarcarrinho" >Adicionar ao Carrinho</button>
+            </section>
+
+            
+        </section> 
+    </main>
+
+    <!-- <div  id="myModal" class="modal" tabindex="-1" role="dialog" >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Produto Adicionado ao carrinho.</p>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <footer>
+        <section class="section_footer">
+          <img src="imagens-e-video/web-logo-preto3.png" alt="Web Cosmésticos Logo" id="logo_footer">
+          <section class="section_footer">
+            <table>
+              <tr>
+                <th style="font-family: Raleway, Arial, Helvetica, sans-serif;">SERVIÇOS ONLINE</th>
+                <th style="font-family: Raleway, Arial, Helvetica, sans-serif;">SERVIÇOS DA BOUTIQUE</th>
+                <th style="font-family: Raleway, Arial, Helvetica, sans-serif;">A Web Cosmésticos</th>
+              </tr>
+              <tr>
+                <td style="font-family: Raleway, Arial, Helvetica, sans-serif;">Perguntas Frequentes</td>
+                <td style="font-family: Raleway, Arial, Helvetica, sans-serif;">Escolha uma Boutique</td>
+                <td style="font-family: Raleway, Arial, Helvetica, sans-serif;">Trabalhe Conosco</td>
+              </tr>
+              <tr>
+                <td style="font-family: Raleway, Arial, Helvetica, sans-serif;">Minha Conta</td>
+                <td style="font-family: Raleway, Arial, Helvetica, sans-serif;">Agendamento com a Web Cosmésticos</td>
+                <td style="font-family: Raleway, Arial, Helvetica, sans-serif;">Privacidade</td>
+              </tr>
+              <tr>
+                <td style="font-family: Raleway, Arial, Helvetica, sans-serif;">Instrução de Cuidados</td>
+                <td style="font-family: Raleway, Arial, Helvetica, sans-serif;">Lojas Web Cosmésticos</td>
+                <td style="font-family: Raleway, Arial, Helvetica, sans-serif;">Combate à Falsificação</td>
+              </tr>
+
+             
+</body>
+
+
+
+
+
+
+<script src="carrinho.js" ></script>
+</html>
