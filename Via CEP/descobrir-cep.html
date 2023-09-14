@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Não sei meu CEP</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+    <div id="container">
+            <form>
+            <img src="buca-meu-cep.png" alt="busca meu cep">
+            <div class="formulario">
+                <label for="rua">Rua</label>
+                <input type="text" name="rua" id="rua" placeholder="Digite sua rua" required autofocus>
+            </div>
+            <div class="formulario">
+                <label for="cidade">Cidade</label>
+                <input type="text" name="cidade" id="cidade" placeholder="Digite sua cidade">
+            </div>
+            <div class="formulario">
+                <label for="estado">UF</label>
+                <input type="text" name="estado" id="estado" placeholder="Digite seu UF">
+            </div>
+            <div class="formulario">
+                <button type="button" id="btnBuscarCep" class="btn">Buscar</button>
+            </div>
+        </form>
+        <ul id="listaCep"></ul>
+
+    </div>
+    <script src="js/scripts2.js"></script>
+</body>
+</html>
