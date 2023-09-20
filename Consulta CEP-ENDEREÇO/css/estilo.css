@@ -20,7 +20,7 @@
 
     .formulario input {
         width: calc(100% - 16px);
-    }   
+    }
 }
 
 body {
@@ -80,8 +80,13 @@ li {
     padding: 8px;
     background: #fff;
     border-radius: 10px;
-    text-align: center; 
-    margin: 5% 43% 0; 
+    text-align: center;
+    margin: 10px
+}
+
+#btn{
+    margin-left: 32%;
+    margin-top: 10%;
 }
 
 

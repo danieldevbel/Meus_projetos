@@ -1,7 +1,7 @@
 
 let cepInput = document.querySelector('#cep');
 let rua = document.querySelector('#rua');
-let complemento = document.querySelector('#complemento')
+let complemento = document.querySelector('#complemento');
 let bairro = document.querySelector('#bairro');
 let localidade = document.querySelector('#localidade');
 let estado = document.querySelector('#estado');
@@ -17,11 +17,20 @@ function popularForm(resposta) {
     if (!resposta.erro) {
         console.log(resposta);
         rua.value = resposta.logradouro;
-        complemento.value = resposta.complemento
+        complemento.value = resposta.complemento;
         bairro.value = resposta.bairro;
         localidade.value = resposta.localidade;
         estado.value = resposta.uf;
     } else {
         alert('CEP não encontrado');
     }
-} 
+}
+
+function limpar(){
+    cep.value = '';
+    rua.value = '';
+    complemento.value = '';
+    bairro.value = '';
+    localidade.value = '';
+    estado.value = '';
+}

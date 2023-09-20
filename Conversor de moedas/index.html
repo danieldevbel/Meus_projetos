@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de moedas</title>
+    <link rel="stylesheet" href="css/estilo.css" />
+</head>
+<body>
+    <div id="container">
+        <h2>Conversor de moedas</h2>
+        <div class="formulario">
+            <Label for="real">Real:</Label>
+            <input type="number" class="input-number" name="real" id="real">
+        </div>
+        <div class="formulario">
+            <label for="dolar">Dolar:</label>
+            <input type="number" class="input-number" name="dolar" id="dolar">
+        </div>
+        <div class="formulario">
+            <label for="euro">Euro:</label>
+            <input type="number" class="input-number" name="euro" id="euro">
+        </div>
+        <div id="btes">
+            <button id="btnConverter" type="button" onclick="converter()">Converter</button>
+            <button id="btnLimpar" type="button" onclick="limpar()">Limpar</button>
+        </div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
