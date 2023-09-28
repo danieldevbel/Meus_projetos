@@ -7,7 +7,7 @@
 
 body{
     font-family: "Trebuchet MS", Helvetica, sans-serif;
-    background: #fff url(../imagens/fundo.png) repeat-x;
+    background: #fff url(../imagens/fundo-2.png) repeat-x;
 }
 
 #container{
@@ -18,21 +18,23 @@ body{
 
 #topo{
     height: 150px;
-    background: url(../imagens/detalhe-topo.png) no-repeat right top;
+    background: url(../imagens/mapa-para.png) no-repeat right top;
     padding-top: 25px;
 }
 
+
 .logo{
-    width: 152px;
-    height: 66px;
-    background: url(../imagens/logo.png) no-repeat;
+    width: 190px;
+    height: 80px;
+    background: url(../imagens/logo1.png) no-repeat;
     text-indent: -2000px;
 }
 
-/* Barra de navegação */ 
+/* Barra de navegação */
 
 a:link, a:visited{
-    color: #b10333;
+    border-radius: 5px;
+    color: #790224;
     padding: 2px;
 }
 
@@ -41,14 +43,16 @@ a:hover{
 }
 
 ul{
-    margin: 0;
+    margin-left: 13px;
     padding: 0;
     list-style: none;
 }
-
+#navegacao{
+    border-radius: 5px;
+}
 #topo ul {
-    background: #b10333;
-    margin-top: 30px;
+    background: #bb0909;
+    margin-top: 20px;
     float: left;
 }
 
@@ -78,10 +82,15 @@ ul{
 body.home #navegacao a#home, 
 body.brasil #navegacao a#brasil,
 body.internacional #navegacao a#internacional,
-body.fotos #navegacao a#fotos
+body.fotos #navegacao a#fotos,
+body.ciencia #navegacao a#ciencia,
+body.belem #navegacao a#belem,
+body.ananideua #navegacao a#ananideua,
+body.marituba #navegacao a#marituba,
+body.saude #navegacao a#saude
 {
     color: #fff;
-    background: #de003e;
+    background: #740222d5;
     cursor: text
 }
 

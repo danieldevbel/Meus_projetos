@@ -4,15 +4,17 @@
 
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Notícias cidade - Seu site de notícias</title>
+        <link rel="shortcut icon" href="imagens/logo-aba.ico" type="image/x-icon">
+        <title>Pará notícias - Seu site pai d'égua!</title>
 
         <!--Estilo customizado-->
 
         <link rel="stylesheet" type="text/css" href="css/estilo.css">
+        <script src="js/script.js" defer></script>
 
     </head>
 
-    <body id="duas-colunas" class="brasil">
+    <body id="duas-colunas" class="belem">
         <!-- Inicio / container -->
 
         <div id="container">
@@ -24,8 +26,9 @@
                 <ul id="navegacao">
                     <li class="primeiro"><a id="home" href="index.html">Home</a></li>
                     <li><a id="brasil" href="brasil.html">Brasil</a></li>
-                    <li><a id="internacional" href="internacional.html">Internacional</a></li>
-                    <li><a id="economia" href="economia.html">Economia</a></li>
+                    <li><a id="belem" href="belem.html">Belém</a></li>
+                    <li><a id="ananideua" href="ananideua.html">Ananideua</a></li>
+                    <li><a id="marituba" href="marituba.html">Marituba</a></li>
                     <li><a id="saude" href="saude.html">Saúde</a></li>
                     <li><a id="ciencia" href="ciencia.html">Ciência</a></li>
                     <li><a id="fotos" href="fotos.html">Fotos</a></li>
@@ -37,7 +40,7 @@
             <!-- Inicio / conteudo -->
             <div id="conteudo">
 
-                <div id="primario"> 
+                <div id="primario">
 
                     
                     <div class="caixa destaque">
@@ -115,15 +118,15 @@
                         <h2>News</h2>
                         <div class="caixa-conteudo">
                             <ul>
-                               <form>
+                                <form>
                                     <div>
                                         <label>Email:</label>
                                         <input type="text" name="email" id="email" placeholder="Email">
                                     </div>
                                     <div>
-                                        <input class="submit" type="submit" value="Cadastrar">
+                                        <input class="submit" type="submit" onclick="validarEmail()" value="Cadastrar">
                                     </div>
-                               </form>
+                                </form>
                             </ul>
                         </div>
                     </div>
@@ -140,7 +143,7 @@
 
         <div id="container-rodape" style="clear: both;">
             <div id="rodape">
-                &copy; Copyright 2000-2018 Notícias cidade
+                &copy; Copyright 2023 Notícias Pará, Seu site pai d'égua!
             </div>
         </div>
 
