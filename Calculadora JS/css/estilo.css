@@ -32,30 +32,30 @@ body{
     text-align: right;
 }
 
-#previous-operation,
-#current-operation{
+#operacao-anterior,
+#operacao-atual{
     padding: 0.2em;
     overflow-wrap: break-word;
     min-height: 1.6em;
 
 }
 
-#previous-operation{
+#operacao-anterior{
     color: #777;
 }
 
-#current-operation{
+#operacao-atual{
     font-size: 3em;
     font-weight: 700;
 }
 
-#buttons-container{
+#botoes-container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 3px;
 }
 
-#buttons-container button{
+#botoes-container button{
     border: 1px solid transparent;
     border-radius: 0;
     height: 4em;
@@ -64,20 +64,20 @@ body{
     cursor: pointer;
 }
 
-#buttons-container .number{
+#botoes-container .number{
     background-color: #f3f3f3;
 }
 
-#buttons-container button:hover{
+#botoes-container button:hover{
     background-color: #bababa;
     border-color: #999;
 }
 
-#buttons-container #equal-btn{
-    grid-column: span 2;
+#botoes-container #equal-btn{
+    grid-column: span 4 ;
     background-color: #75a5cb;
 }
 
-#buttons-container #equal-btn:hover{
+#botoes-container #equal-btn:hover{
     background-color: #3a91d8;
 }

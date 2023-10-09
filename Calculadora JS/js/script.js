@@ -1,145 +1,157 @@
+const textoOperacaoAnterior = document.querySelector('#operacao-anterior');
+const textoOperacaoAtual = document.querySelector('#operacao-atual');
+const botoes = document.querySelectorAll('#botoes-container button');
 
-const previousOperationText = document.querySelector('#previous-operation');
-const currentOperationText = document.querySelector('#current-operation');
-const buttons = document.querySelectorAll('#buttons-container button');
-
-class Calculator{
-    constructor(previousOperationText, currentOperationText) {
-        this.previousOperationText = previousOperationText;
-        this.currentOperationText = currentOperationText;
-        this.currentOperation = "";
+class Calcular{
+    constructor(textoOperacaoAnterior, textoOperacaoAtual) {
+        this.textoOperacaoAnterior = textoOperacaoAnterior;
+        this.textoOperacaoAtual = textoOperacaoAtual;
+        this.operacaoAtual = "";
     }
 
     // adc o digito no visor da calculadora
-    addDigit(digit) {
+    addDigito(digito) {
         // verifique se a operação atual já possui ponto
-        if(digit === '.' && this.currentOperationText.innerText.includes(".")){
+        if(digito === '.' && this.textoOperacaoAtual.innerText.includes(".")){
             return;
         }
 
-        this.currentOperation = digit;
-        this.updateScreen();
+        this.operacaoAtual = digito;
+        this.atualizarTela();
     }
-    
+
     // processar todas as operações da calculadora
-    processOperation(operation) {
+    processarOperacao(operacao) {
         // verifique se a corrente está vazia
-        if(this.currentOperationText.innerText === "" && operation != "C"){
+        if(this.textoOperacaoAtual.innerText === "" && operacao != "C"){
             // mudar operação
-            if(this.previousOperationText.innerText !== "") {
-                this.changeOperation(operation);
+            if(this.textoOperacaoAnterior.innerText !== "") {
+                this.carregarOperacao(operacao);
             }
             return;
         }
 
-        // obter o valor atual e anterior
-        let operationValue;
-        const previous = +this.previousOperationText.innerText.split(" ")[0];
-        const current = +this.currentOperationText.innerText;
+        // obter o valor atual e anteriorr
+        let valorOperacao;
+        const anterior = + this.textoOperacaoAnterior.innerText.split(" ")[0];
+        const atual = + this.textoOperacaoAtual.innerText;
 
-        switch(operation){
+        switch(operacao){
             case "+":
-                operationValue = previous + current;
-                this.updateScreen(operationValue, operation, current, previous);
+                valorOperacao = anterior + atual;
+                this.atualizarTela(valorOperacao, operacao, atual, anterior);
             break;
             case "-":
-                operationValue = previous - current;
-                this.updateScreen(operationValue, operation, current, previous);
+                valorOperacao = anterior - atual;
+                this.atualizarTela(valorOperacao, operacao, atual, anterior);
                 break;
             case "/":
-                operationValue = previous / current;
-                this.updateScreen(operationValue, operation, current, previous);
+                valorOperacao = anterior / atual;
+                this.atualizarTela(valorOperacao, operacao, atual, anterior);
             break;
             case "*":
-                operationValue = previous * current;
-                this.updateScreen(operationValue, operation, current, previous);
+                valorOperacao = anterior * atual;
+                this.atualizarTela(valorOperacao, operacao, atual, anterior);
+                break;
+            case "x²":
+                valorOperacao = Math.pow(atual, 2);
+                this.textoOperacaoAtual.innerText = `${valorOperacao}`;
+                this.textoOperacaoAnterior.innerText = atual + " ² =";
+                break;
+            case "Sqrt":
+                valorOperacao = Math.sqrt(atual);
+                this.textoOperacaoAtual.innerText = `${valorOperacao}`;
+                this.textoOperacaoAnterior.innerText = atual + " Sqrt =";
                 break;
             case "DEL":
-                this.processDelOperator();
+                this.processarOpDEL();
                 break;
             case "CE":
-                this.processClearCurrentOperatorion();
+                this.limparOperacaoAtual();
                 break;
             case "C":
-                this.processClearOperatorion();
+                this.limparOperacao();
                 break;
             case "=":
-                this.processEqualOperator();
+                this.operadorIgual();
                 break;
             default:
                 return;
         }
     }
-    
-    // alterar o valor da tela da calculadora
-    updateScreen(
-        operationValue = null,
-        operation = null,
-        current = null,
-        previous = null) {
-            console.log(operationValue, operation, current, previous);
 
-        if(operationValue === null) {
-            this.currentOperationText.innerText += this.currentOperation;
+    // alterar o valor da tela da calculadora
+    atualizarTela(
+        valorOperacao = null,
+        operacao = null,
+        atual = null,
+        anterior = null) {
+            console.log(valorOperacao, operacao, atual, anterior);
+
+        if(valorOperacao === null) {
+            this.textoOperacaoAtual.innerText += this.operacaoAtual;
         }else{
             // verifique se o valor é zero, se for apenas adicione o valor atual
-            if(previous === 0) {
-                operationValue = current;
+            if(anterior === 0) {
+                valorOperacao = atual;
             }
 
-            // adicione o valor atual ao anterior
-            this.previousOperationText.innerText = `${operationValue} ${operation}`;
-            this.currentOperationText.innerText = "";
+            // adicione o valor atual ao anteriorr
+            this.textoOperacaoAnterior.innerText = `${valorOperacao} ${operacao}`;
+            this.textoOperacaoAtual.innerText = "";
         }
     }
+    
     // mudar operações matematicas
-    changeOperation(operation) {
+    carregarOperacao(operacao) {
 
         const mathOperations = ["*", "/" , "+", "-"]
 
-        if(!mathOperations.includes(operation)){
+        if(!mathOperations.includes(operacao)){
             return
         }
 
-        this.previousOperationText.innerText = this.previousOperationText.innerText.slice(0, -1) + operation;
-    
+        this.textoOperacaoAnterior.innerText = this.textoOperacaoAnterior.innerText.slice(0, -1) + operacao;
+
     }
+    
     // deletar um digito
-    processDelOperator() {
-        this.currentOperationText.innerText = this.currentOperationText.innerText.slice(0, -1);
+    processarOpDEL() {
+        this.textoOperacaoAtual.innerText = this.textoOperacaoAtual.innerText.slice(0, -1);
     }
 
     // limpar operação atual
-    processClearCurrentOperatorion(){
-        this.currentOperationText.innerText = "";
+    limparOperacaoAtual(){
+        this.textoOperacaoAtual.innerText = "";
     }
 
     // limpar toda operação
-    processClearOperatorion(){
-        this.currentOperationText.innerText = "";
-        this.previousOperationText.innerText = "";
+    limparOperacao(){
+        this.textoOperacaoAtual.innerText = "";
+        this.textoOperacaoAnterior.innerText = "";
     }
 
     // operador igual
-    processEqualOperator(){
-        const operation = previousOperationText.innerText.split(" ")[1];
+    operadorIgual(){
+        const operacao = textoOperacaoAnterior.innerText.split(" ")[1];
 
-        this.processOperation(operation);
+        this.processarOperacao(operacao);
+    }
+
+    operadorPotencia(){
+        return Math.pow(anterior,2)
     }
 }
 
+const calc = new Calcular(textoOperacaoAnterior, textoOperacaoAtual);
 
-
-
-const calc = new Calculator(previousOperationText, currentOperationText);
-
-buttons.forEach((btn) => {
+botoes.forEach((btn) => {
     btn.addEventListener("click", (e) => {
         const value = e.target.innerText;
         if(+value >= 0 || value === "."){
-            calc.addDigit(value);
+            calc.addDigito(value);
         }else{
-            calc.processOperation(value);
+            calc.processarOperacao(value);
         };
 
     })
