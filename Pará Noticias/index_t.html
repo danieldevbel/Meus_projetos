@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
     <head>
 
         <meta charset="UTF-8">
@@ -11,10 +11,9 @@
 
         <link rel="stylesheet" type="text/css" href="css/estilo.css">
         <script src="js/script.js" defer></script>
-
     </head>
 
-    <body id="duas-colunas" class="belem">
+    <body class="home">
         <!-- Inicio / container -->
 
         <div id="container">
@@ -22,7 +21,7 @@
             <!-- Inicio / topo -->
             <div id="topo">
 
-                <h1 class="logo">Noticias cidade</h1>
+                <h1 class="logo">Noticias Pará</h1>
                 <ul id="navegacao">
                     <li class="primeiro"><a id="home" href="index.html">Home</a></li>
                     <li><a id="brasil" href="brasil.html">Brasil</a></li>
@@ -48,9 +47,9 @@
                         
                         <div class="caixa-conteudo">
                             <h3>Nova legislação</h3>
-                            <img class="imagem-principal" src="imagens/taxi.jpg" width="100%">
+                            <img class="imagem-principal" alt="taxi" src="imagens/taxi.jpg" width="100%">
                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                            <a href="">Leia mais!</a>
+                            <a href="nova-legislacao.html">Leia mais!</a>
                         </div>
                         
                     </div>
@@ -62,28 +61,28 @@
                             <ul id="lista-noticias">
                                 <li>
                                     <a href="">
-                                        <img src="imagens/tecnologia.jpg" width="80">
+                                        <img src="imagens/tecnologia.jpg" alt="tecnologia" width="80">
                                         <h3>Novas tecnologias!</h3>
                                         <p>Lorem Ipsum is simply dummy text...</p>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="">
-                                        <img src="imagens/tecnologia.jpg" width="80">
+                                        <img src="imagens/tecnologia.jpg" alt="tecnologia" width="80">
                                         <h3>Novas tecnologias!</h3>
                                         <p>Lorem Ipsum is simply dummy text...</p>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="">
-                                        <img src="imagens/tecnologia.jpg" width="80">
+                                        <img src="imagens/tecnologia.jpg" alt="tecnologia" width="80">
                                         <h3>Novas tecnologias!</h3>
                                         <p>Lorem Ipsum is simply dummy text...</p>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="">
-                                        <img src="imagens/tecnologia.jpg" width="80">
+                                        <img src="imagens/tecnologia.jpg" alt="tecnologia" width="80">
                                         <h3>Novas tecnologias!</h3>
                                         <p>Lorem Ipsum is simply dummy text...</p>
                                     </a>
@@ -94,7 +93,59 @@
                     </div>
                     
                 </div>
-                
+                <div id="secundario">
+
+                    <div class="caixa entrevista">
+                        <h2>Última entrevista</h2>
+
+                        <div class="caixa-conteudo">
+                            <h3>Entrevista com felipe silva</h3>
+                            <img class="imagem-principal" src="imagens/doutor.jpg" alt="doutor" width="100%">
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <a href="">Leia mais!</a>
+                        </div>
+
+                    </div>
+
+                    <div class="caixa">
+                        <h2>Notícias recentes</h2>
+
+                        <div class="caixa-conteudo">
+                            <ul id="lista-noticias">
+                                <li>
+                                    <a href="">
+                                        <img src="imagens/cidade.jpg" alt="cidade" width="80">
+                                        <h3>Novas tecnologias!</h3>
+                                        <p>Lorem Ipsum is simply dummy text...</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="imagens/taxi.jpg" alt="taxi" width="80">
+                                        <h3>Novas tecnologias!</h3>
+                                        <p>Lorem Ipsum is simply dummy text...</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="imagens/tecnologia.jpg" alt="tecnologia" width="80">
+                                        <h3>Novas tecnologias!</h3>
+                                        <p>Lorem Ipsum is simply dummy text...</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="imagens/doutor.jpg" alt="doutor" width="80">
+                                        <h3>Novas tecnologias!</h3>
+                                        <p>Lorem Ipsum is simply dummy text...</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
                 <!-- Inicio / lateral -->
                 <div id="lateral">
 
@@ -121,10 +172,10 @@
                                 <form>
                                     <div>
                                         <label>Email:</label>
-                                        <input type="text" name="email" id="email" placeholder="Email">
+                                        <input type="email" name="email" id="email" placeholder="Email">
                                     </div>
                                     <div>
-                                        <input class="submit" type="submit" onclick="validarEmail()" value="Cadastrar">
+                                        <input class="submit" type="submit" id="btn" onclick="validarEmail()" value="Cadastrar">
                                     </div>
                                 </form>
                             </ul>
@@ -146,6 +197,6 @@
                 &copy; Copyright 2023 Notícias Pará, Seu site pai d'égua!
             </div>
         </div>
-
+        
     </body>
 </html>

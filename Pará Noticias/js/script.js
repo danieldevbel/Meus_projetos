@@ -9,3 +9,20 @@ function validarEmail() {
         alert('EMAIL INVÁLIDO! VERIFIQUE O EMAIL DIGITADO.')
     }
 }
+
+const box = document.querySelector(".container");
+const imagens = document.querySelectorAll(".container img");
+
+let contador = 0;
+
+function slider() {
+    contador++;
+
+    if (contador >= imagens.length) {
+        contador = 0;
+    }
+    
+    box.style.transform = `translateY(${-contador * 300}px)`
+}
+
+setInterval(slider, 4000);
