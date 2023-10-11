@@ -159,7 +159,6 @@ h2{
     }
 
 .container{
-
     transition: 0.7s ease-in-out;
     transform: translateY(0);
 }
@@ -168,6 +167,37 @@ h2{
     width: 545px;
     height: 290px;
     margin: 0;
+}
+
+.carrosel-container {
+    position: relative;
+}
+
+.texto-botao {
+    border-radius: 15px;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.4); /* Fundo semitransparente */
+    padding: 20px;
+    text-align: center;
+    width: 80%;
+    height: 50%;
+}
+
+.texto-botao p {
+    margin: 0;
+    padding: 20px;
+}
+
+.texto-botao button {
+    background-color: #bb0909bb; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
 }
 
 /* Formatar menus laterais */

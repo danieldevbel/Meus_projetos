@@ -22,7 +22,11 @@ function slider() {
         contador = 0;
     }
     
-    box.style.transform = `translateY(${-contador * 300}px)`
+    box.style.transform = `translateY(${-contador * 299}px)`
 }
 
 setInterval(slider, 4000);
+
+document.getElementById("botao-redirecionar").addEventListener("click", function() {
+    window.location.href = "fotos.html";
+});
