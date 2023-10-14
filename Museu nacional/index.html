@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Museu Nacional</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js" integrity="sha513-RCtZMoZSQ5csGk1zBPGImR8OY+NJfe0IsaFrDD649yYrSBgCf3kYiP79AfWT9/idKbpWYteQmswChxbXC7YHig==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <div id="container"> <!--Inicio Container-->
+        <header><!--Inicio header-->
+            <div id="logo">
+                <h1><a href="">Museu Nacional</a></h1>
+            </div>
+            <nav><!--Inicio nav -->
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Exposições</a></li>
+                    <li><a href="">Pesquisa</a></li>
+                    <li><a href="">Acervo</a></li>
+                    <li><a href="">Vídeos</a></li>
+                    <li><a href="">Fotos</a></li>
+                    <li><a href="">Contato</a></li>
+                </ul>
+            </nav><!--/fim nav-->
+        </header><!--/fim header-->
+        <div id="principal"><!--Inicio principal-->
+            <div id="conteudo"><!--Inicio conteudo-->
+                <section id="capa">
+                    <img src="imagens/museu.png" alt="museu">
+                </section>
+                <section id="postagens">
+                    <article id="video">
+                        <h3>Vídeo: Conheça o museu</h3>
+                        <iframe width="310" height="170" src="https://www.youtube.com/embed/RGUYb-hivrc?si=Vh9h8eOMzzVGA849" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </article>
+                    <article id="mapa">
+                        <h3>Mapa: Encontre o museu</h3>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.206311821341!2d-43.22910382468973!3d-22.9057599792558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997e58a085b7af%3A0x4d11e9a933d38ce3!2sMuseu%20Nacional%20-%20UFRJ!5e0!3m2!1spt-BR!2sbr!4v1697313359079!5m2!1spt-BR!2sbr" width="310" height="170" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </article>
+                    <article id="exposicoes">
+                        <h3>Exposições</h3>
+                        <ul>
+                            <li>
+                                <a href="">Os assustadores insetos</a>
+                            </li>
+                            <li>
+                                <a href="">O crânio de Luzia, a mulher mais antiga do Brasil</a>
+                            </li>
+                            <li>
+                                <a href="">Preguiça gigante e tigre-dentes-de-sabre</a>
+                            </li>
+                            <li>
+                                <a href="">Plantas do Brasil Central</a>
+                            </li>
+                            <li>
+                                <a href="">Teresa Cristina: A Imperatriz Arqueóloga</a>
+                            </li>
+                            <li>
+                                <a href="">Arte com dinossauros = Paleoarte</a>
+                            </li>
+                            <li>
+                                <a href=""><strong>Veja todos (65)</strong></a>
+                            </li>
+                        </ul>
+                    </article>
+                    <article id="historia">
+                        <h3>200 anos de história</h3>
+                        <p>
+                            Numa ponta que avança sobre o mar, porteriormente conhecida como Ponta do Calabouço, entre as praias de piaçaba e Santa Luzia, no centro histórico do Rio de Janeiro, os portugueses contruíram em 1603 a Fortaleza de Santiago, origem do conjunto arquitetônico que hoje abriga o Museu Histórico Nacional.
+                        </p>
+                        <a href=""><strong>Leia mais</strong></a>
+                    </article>
+                </section>
+            </div><!--Fim conteudo-->
+            <aside><!--Inicio aside-->
+                <section id="depoimento">
+                    <img src="imagens/depoimento.png" alt="depoimento">
+                </section>
+                <section id="visita"><!--Inicio visita-->
+                    <h4>Faça uma visita</h4>
+                    <form>
+                        <fieldset>
+                            <legend></legend>
+                            <label for="data">Data</label>
+                            <input class="campo" type="text" id="data" value="dd/mm/aaaa">
+
+                            <label for="qtd">Qtd pessoas</label>
+                            <input class="campo" style="width: 30px;" type="text" id="qtd" value="1">
+                        </fieldset>
+                        <input class="botao" type="submit" value="Verificar disponibilidade">
+                    </form>
+                </section><!--/fim seçao visita-->
+                <section id="galeria">
+                    <h4>Galeria de fotos</h4>
+                    <a href="">
+                        <img src="imagens/imagem1.jpg" alt="imagem1" height="93" width="93">
+                    </a>
+                    <a href="">
+                        <img src="imagens/imagem2.jpg" alt="imagem2" height="93" width="93">
+                    </a>
+                    <a href="">
+                        <img src="imagens/imagem3.jpg" alt="imagem3" height="93" width="93">
+                    </a>
+                    <a href="">
+                        <img src="imagens/imagem4.jpg" alt="imagem4" height="93" width="93">
+                    </a>
+                </section>
+            </aside><!--/fim aside-->
+            <footer>
+                <p>
+                    <a href="">Home</a>
+                    <a href="">Exposições</a>
+                    <a href="">Pesquisa</a>
+                    <a href="">Acervo</a>
+                    <a href="">Vídeos</a>
+                    <a href="">Fotos</a>
+                    <a href="">Contato</a>
+                </p>
+                <p>
+                    2023 <a href="">Museu Nacional</a> - Todos os direitos reservardos.
+                </p>
+            </footer>
+        </div><!--/fim principal-->
+    </div><!--/fim container-->
+</body>
+</html>
